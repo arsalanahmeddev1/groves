@@ -1,30 +1,31 @@
-import { Button } from "@/components/ui/button"
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react"
+import { FaTiktok, FaInstagram, FaTwitter, FaSnapchatGhost } from "react-icons/fa"
+import { SiX } from "react-icons/si"
 import Link from "next/link"
 
-const socialLinks = [
-  { name: "Facebook", icon: Facebook, url: "https://facebook.com" },
-  { name: "Twitter", icon: Twitter, url: "https://twitter.com" },
-  { name: "Instagram", icon: Instagram, url: "https://instagram.com" },
-  { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com" },
-  { name: "GitHub", icon: Github, url: "https://github.com" },
+const socialIcons = [
+  { name: "TikTok", icon: FaTiktok, url: "https://tiktok.com" },
+  { name: "Instagram", icon: FaInstagram, url: "https://instagram.com" },
+  { name: "X", icon: SiX, url: "https://x.com" },
+  { name: "Snapchat", icon: FaSnapchatGhost, url: "https://snapchat.com" },
 ]
 
-export function SocialIcons() {
+export function SocialIconsList() {
   return (
-    <div className="flex justify-center space-x-4 my-8">
-      {socialLinks.map((social) => (
-        <Link key={social.name} href={social.url} target="_blank" rel="noopener noreferrer">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="w-10 h-10 rounded-full"
+    <ul className="flex flex-wrap justify-center gap-6">
+      {socialIcons.map((social) => (
+        <li key={social.name}>
+          <Link
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-3 text-gray-400  transition-colors"
             aria-label={`Visit our ${social.name} page`}
           >
-            <social.icon className="w-5 h-5" />
-          </Button>
-        </Link>
+            <social.icon className="w-[21px] h-[21px]" />
+            <span className="sr-only">{social.name}</span>
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
