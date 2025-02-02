@@ -4,7 +4,7 @@ const ButtonLink = ({link, classes, text, arrow}) => {
   return (
     <Link
     href={link}
-    className={`${classes} ${arrow ? "flex justify-between items-center gap-5" : ""} rounded-[10px] bg-gradient-to-b from-midBrown to-lightBrown text-center text-white`}
+    className={`${classes} ${arrow ? "flex justify-between items-center gap-5" : ""} rounded-[10px] bg-gradient-to-b from-midBrown to-lightBrown text-center text-white hover:bg-theme-gradient transition duration-50000 ease-in-out`}
     >
       {text}
       {arrow && (

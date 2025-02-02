@@ -15,8 +15,8 @@ export const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 3000,
+  autoplay: true,
+  autoplaySpeed: 5000,
   pauseOnHover: false,
 };
 
@@ -67,7 +67,7 @@ export const curateSliderData = {
     className: "slider curatedslider",
     dots: false,
     infinite: true,
-    centerMode: true,
+    centerMode: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,

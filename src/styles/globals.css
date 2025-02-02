@@ -30,7 +30,17 @@ h3 {
 .container {
   @apply mx-auto;
 }
+::-webkit-scrollbar {
+  @apply bg-midBrown;
+  width: 8px;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-themeGreen;
+  border-radius: 6px;
 
+
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

@@ -83,10 +83,10 @@ const Footer = () => {
           <div className="flex items-center justify-between">
             <ul className="flex gap-10 items-center">
               <li className="md:text-[15px] text-[13px]">
-                <Link href="#" className="font-inter">Terms & Conditions</Link>
+                <Link href="#" className="font-inter hover:underline">Terms & Conditions</Link>
               </li>
               <li className="md:text-[15px] text-[13px]">
-                <Link href="#" className="font-inter">Privacy Policy</Link>
+                <Link href="#" className="font-inter hover:underline">Privacy Policy</Link>
               </li>
               <li className="md:text-[15px] text-[13px] font-inter">
                 ©2023 The Groves for Entertainment
@@ -167,10 +167,10 @@ const Footer = () => {
         <div className="flex flex-col gap-7 pb-16">
           <ul className="flex flex-col gap-7">
             <li className="md:text-[15px]">
-              <Link href="#" className="font-inter">Terms & Conditions</Link>
+              <Link href="#" className="font-inter hover:underline">Terms & Conditions</Link>
             </li>
             <li className="md:text-[15px]">
-              <Link href="#" className="font-inter">Privacy Policy</Link>
+              <Link href="#" className="font-inter hover:underline">Privacy Policy</Link>
             </li>
             <li className="md:text-[15px] font-inter">
               ©2023 The Groves for Entertainment

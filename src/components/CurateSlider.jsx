@@ -8,7 +8,7 @@ const CurateSlider = () => {
   
 
   return (
-    <div className="2xl:ml-[10vw] curate-container flex md:flex-row flex-col md:items-center gap-10 pt-16">
+    <div className="curate-container flex md:flex-row flex-col md:items-center gap-10 pt-16">
       <div className="w-full xl:min-w-[270px]">
         <h2 className="md:mb-10 mb-8">Curate your <br /> experience <br /> as you like</h2>
         <ButtonLink

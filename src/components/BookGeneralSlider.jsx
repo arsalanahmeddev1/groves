@@ -18,7 +18,7 @@ const BookGeneralSlider = ({ heading, buttonText }) => {
           arrow
         />
       </div>
-
+      <div className="lg:pl-[12vw]">
       <div className="pt-16">
         <Slider {...bookGeneralSliderSettings}>
           <div className="slide-item">
@@ -65,6 +65,7 @@ const BookGeneralSlider = ({ heading, buttonText }) => {
             <h3 className="text-center pt-5">Lucaworld</h3>
           </div>
         </Slider>
+      </div>
       </div>
     </>
   );

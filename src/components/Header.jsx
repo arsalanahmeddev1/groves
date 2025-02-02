@@ -7,28 +7,28 @@ import React, { useState } from "react";
 
 
 const Header = () => {
-  const [res, setRes] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleRes = () => {
-    setRes(!res);
+  const handleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
   return (
     <header className="header absolute z-50 top-0 left-0 w-full">
     <div className="container relative">
       <div
         className={`topbar flex items-center justify-between gap-10 pb-3 lg:pt-5 pt-4 lg:static z-10 ${
-          res ? "fixed" : "absolute"
+          isMenuOpen ? "fixed" : "absolute"
         } w-full top-0 left-0 lg:px-0 px-8`}
       >
         <div className="logo">
-          <Image src="/images/logo.png" width={220} height={139} alt="" />
+          <Link href="/"> <Image src="/images/logo.png" width={220} height={139} alt="" /> </Link>
         </div>
         <div className="social_icons lg:flex hidden gap-6 items-center justify-between">
           <SocialIconsList />
           <ButtonLink
             text="Log in"
             link="#"
-            classes="py-3 max-w-[142px] w-full px-10"
+            classes="py-3 max-w-[142px] w-full px-10 "
           />
           <button className="flex gap-3 items-center">
             <Image src="/images/down.svg" width={14} height={8} alt="" />
@@ -37,13 +37,13 @@ const Header = () => {
           </button>
         </div>
         <div className="lg:hidden flex">
-          {res ? (
+          {isMenuOpen ? (
             <Image
               src="/images/cancel.svg"
               width={24}
               height={24}
               alt=""
-              onClick={handleRes}
+              onClick={handleMenu}
             />
           ) : (
             <Image
@@ -51,7 +51,7 @@ const Header = () => {
               width={24}
               height={24}
               alt=""
-              onClick={handleRes}
+              onClick={handleMenu}
             />
           )}
         </div>
@@ -60,7 +60,7 @@ const Header = () => {
 
     <div
       className={`navbar lg:border-y-[0.5px] border-y-white/50 lg:py-3 2xl:mt-5 lg:mt-3 lg:static fixed top-0 left-0 w-full h-full lg:bg-none ${
-        res ? "block navbar-open" : "lg:block hidden"
+        isMenuOpen ? "block navbar-open" : "lg:block hidden"
       } bg-theme-gradient pt-28`}
     >
       <ul className="container flex lg:flex-row flex-col justify-between lg:items-center">
