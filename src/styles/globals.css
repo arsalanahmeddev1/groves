@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url(./style.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,28 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+/* custom */
+
+h2 {
+  @apply lg:text-[50px] md:text-[42px] text-[34px];
+}
+p {
+  @apply leading-[23px] text-[15px];
+}
+h3 {
+  @apply md:text-[30px] text-[25px];
+}
+
+.top-bar  {
+  @apply flex justify-between items-center w-full;
+}
+.header {
+  @apply   absolute top-[21px] w-full z-[1]; 
+}
+.container {
+  @apply mx-auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +41,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-playfair;
 }

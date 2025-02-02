@@ -1,24 +1,24 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import Header from "@/components/Header/Header";
-import Banner from "@/components/Banner/Banner";
-import { Fragment } from "react";
+import Header from "@/components/Header";
+import Banner from "@/components/Banner";
+import AboutUs from "@/components/AboutUs";
+import BookGeneralSlider from "@/components/BookGeneralSlider";
+import FinestCuisine from "@/components/FinestCuisine";
+import CurateSlider from "@/components/CurateSlider";
+import Map from "@/components/Map";
+import Footer from "@/components/Footer";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export default function Home() {
   return (
     <>
       <Header />
       <Banner />
+      <AboutUs />
+      <BookGeneralSlider />
+      <FinestCuisine />
+      <CurateSlider />
+      <Map />
+      <Footer />
     </>
   );
 }

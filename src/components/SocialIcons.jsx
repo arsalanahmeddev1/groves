@@ -1,4 +1,4 @@
-import { FaTiktok, FaInstagram, FaTwitter, FaSnapchatGhost } from "react-icons/fa"
+import { FaTiktok, FaInstagram, FaSnapchatGhost } from "react-icons/fa"
 import { SiX } from "react-icons/si"
 import Link from "next/link"
 
@@ -11,7 +11,7 @@ const socialIcons = [
 
 export function SocialIconsList() {
   return (
-    <ul className="flex flex-wrap justify-center gap-6">
+    <ul className="flex justify-center gap-3 social-icons">
       {socialIcons.map((social) => (
         <li key={social.name}>
           <Link

@@ -1,0 +1,90 @@
+body {
+  overflow-x: hidden;
+}
+
+.overlay {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 48%,
+    transparent 48%
+  );
+}
+
+/* slick css */
+.slick-dots {
+  bottom: 15% !important;
+  width: 85% !important;
+}
+
+.slick-dots li {
+  margin: 0 5px; 
+  width: 11px !important; 
+  height: 11px !important; 
+  margin: 0 3px !important;
+}
+
+.slick-dots button {
+  background-color: rgba(255, 255, 255, 0.466) !important;
+  transition: background-color 0.3s; 
+  border: none; 
+  border-radius: 50%; 
+  width: 11px !important; 
+  height: 11px !important;
+}
+
+.slick-dots button:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    1
+  ) !important;
+}
+.variable-width .slick-slide > div {
+  margin: 0 25px;
+}
+.variable-width .slick-list {
+  margin: 0 -25px;
+}
+.slick-dots li.slick-active button {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+.slick-dots li button:before {
+  display: none !important;
+}
+
+
+.curatedslider .slick-slide {
+  margin: 0 10px;
+}
+.curate-container {
+  padding-left: 11vw;
+}
+
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .container {
+    max-width: 1070px !important;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .overlay {
+    background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 48%,
+    transparent 100%
+  );
+  }
+}
+@media (max-width: 767px) {
+  .slick-dots {
+    display: flex !important;
+    justify-content: end;
+  }
+  .header .social-icons {
+    position: absolute;
+    bottom: 2rem;
+  }
+}
